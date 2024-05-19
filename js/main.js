@@ -22,7 +22,7 @@ if (Palindroma(parola)) {
 
 
 // Chiede all'utente di scegliere "pari" o "dispari"
-const sceltaUtente = prompt("Scegli pari o dispari:").toLowerCase();
+let sceltaUtente = prompt("Scegli pari o dispari:").toLowerCase();
 
 // Verifica che l'input dell'utente sia pari o dispari
 while (sceltaUtente !== "pari" && sceltaUtente !== "dispari") {
@@ -31,7 +31,7 @@ while (sceltaUtente !== "pari" && sceltaUtente !== "dispari") {
 }
 
 // Chiede all'utente di inserire un numero da 1 a 5
-const numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5:"));
+let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5:"));
 
 // Verifica che l'input dell'utente sia un numero valido
 while (isNaN(numeroUtente) || numeroUtente < 1 || numeroUtente > 5) {
