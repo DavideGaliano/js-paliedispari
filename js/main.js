@@ -51,12 +51,12 @@ const numeroComputer = generaNumeroCasuale();
 const somma = numeroUtente + numeroComputer;
 
 // Funzione per stabilire se un numero è pari o dispari
-function isOdd(numero) {
-    return numero % 2 === 0;
+function isEven(numero) {
+  return numero % 2 === 0;
 }
 
 // Determina se la somma è pari o dispari
-const sommaPari = isOdd(somma);
+const sommaPari = isEven(somma);
 
 // Dichiara chi ha vinto
 if ((sommaPari && sceltaUtente === "pari") || (!sommaPari && sceltaUtente === "dispari")) {
