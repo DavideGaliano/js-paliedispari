@@ -2,7 +2,7 @@
 const parola = prompt("Inserisci una parola:");
 
 // Definisce una funzione per verificare se una parola è palindroma
-function Palindroma(parola) {
+function isPalindroma(parola) {
   // Converte la parola in minuscolo
   const parolaMinuscola = parola.toLowerCase();
 
@@ -14,7 +14,7 @@ function Palindroma(parola) {
 }
 
 // Chiama la funzione Palindroma e stampa il risultato in console
-if (Palindroma(parola)) {
+if (isPalindroma(parola)) {
   console.log("La parola inserita è palindroma.");
 } else {
   console.log("La parola inserita non è palindroma.");
@@ -51,12 +51,12 @@ const numeroComputer = generaNumeroCasuale();
 const somma = numeroUtente + numeroComputer;
 
 // Funzione per stabilire se un numero è pari o dispari
-function pari(numero) {
+function isOdd(numero) {
     return numero % 2 === 0;
 }
 
 // Determina se la somma è pari o dispari
-const sommaPari = pari(somma);
+const sommaPari = isOdd(somma);
 
 // Dichiara chi ha vinto
 if ((sommaPari && sceltaUtente === "pari") || (!sommaPari && sceltaUtente === "dispari")) {
